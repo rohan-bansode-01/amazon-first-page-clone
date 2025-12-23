@@ -1,0 +1,181 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===================== NAVBAR ====================== */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* logo */
+.nav-logo {
+    width: 100px;
+    height: 35px;
+    background-image: url('https://i.imgur.com/5RJ6bQv.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Search bar */
+.nav-search {
+    display: flex;
+    width: 40%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.all {
+    background: #eee;
+    padding: 8px;
+}
+
+.search-amazon {
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+
+.search-logo {
+    width: 40px;
+    background: #e67143;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Cart Icon */
+.cart {
+    font-size: 32px;
+    color: #e67143;
+}
+
+/* ===================== SECOND LINE ====================== */
+.second-line {
+    width: 100%;
+    height: 45px;
+    background: #2d2c2c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+/* ===================== HERO ====================== */
+.line3 {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://st4.depositphotos.com/4678277/40811/i/450/depositphotos_408110334-stock-photo-full-length-body-size-view.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ===================== SHOP GRID ====================== */
+.shop-box {
+    width: 100%;
+    padding: 40px 10px;
+    background: linear-gradient( #071952,#088395,#37B7C3,#EBF4F6);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.shop-box div {
+    height: 220px;
+    border: 6px solid white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.shop-box div:hover {
+    transform: scale(1.05);
+}
+
+/* Online Image URLs */
+.box1 { background-image: url('images/box1.jpg'); }
+.box2 { background-image: url('images/box2.jpg'); }
+.box3 { background-image: url('images/box3.jpg'); }
+.box4 { background-image: url('images/box4.jpg'); }
+.box6 { background-image: url('images/box5.jpg'); }
+.box7 { background-image: url('images/box6.jpg'); }
+.box8 { background-image: url('images/box7.jpg'); }
+.box9 { background-image: url('images/box8.jpg'); }
+/* FOOTER */
+.back {
+    width: 100%;
+    height: 60px;
+    background: #15152b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-line {
+    width: 100%;
+    background: #484857;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    width: 100%;
+    height: 90px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-logo {
+    width: 140px;
+    height: 40px;
+    background-image: url('https://i.imgur.com/5RJ6bQv.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-search {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-search {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
